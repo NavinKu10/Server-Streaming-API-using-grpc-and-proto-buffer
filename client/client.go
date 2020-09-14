@@ -27,7 +27,7 @@ func callMultiply(c pb.MultiplyServiceClient) {
 		}
 
 		if err != nil {
-			log.Fatalf("callMultiply recvErr %v", err)
+			log.Fatalf("callMultiply err %v", err)
 		}
 
 		log.Printf("result %v", resp)
