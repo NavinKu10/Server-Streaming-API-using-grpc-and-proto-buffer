@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package customer;
+
+message Request{
+  int32 a = 1;
+}
+
+message Response{
+  int32 result = 1;
+}
+
+service MultiplyService{
+  rpc Multiply(Request) returns (stream Response) {};
+}
